@@ -33,13 +33,11 @@ const createCompany = () => {
 // req is short for request
 // res is short for response
 app.get("/api/users/new", (req, res) => {
-    const newUser = createUser();
-    res.json(newUser);
+    res.json(createUser());
 });
 
 app.get("/api/companies/new", (req, res) => {
-    const newCompany = createCompany();
-    res.json(newCompany);
+    res.json(createCompany());
 });
 
 app.get("/api/user/company", (req, res) => {
